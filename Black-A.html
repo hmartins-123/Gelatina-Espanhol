@@ -1,0 +1,110 @@
+<!-- Black page variation A: "Salud Rosa" — rose gradient banner + gelatina icon + hamburger -->
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Salud Rosa</title>
+<style>
+  *{box-sizing:border-box;margin:0;padding:0}
+  body{font-family:Arial,Helvetica,sans-serif;background:#fff;color:#111;line-height:1.4}
+  .container{max-width:680px;margin:0 auto;padding:0}
+  img{max-width:100%;display:block}
+
+  /* Header banner — Salud Rosa */
+  .banner{background:linear-gradient(90deg,#f472a0 0%,#d94e7f 100%);padding:14px 16px}
+  .banner-inner{max-width:1100px;margin:0 auto;display:flex;align-items:center;gap:12px}
+  .gel-ic{width:52px;height:52px;border-radius:12px;overflow:hidden;background:#fff;flex-shrink:0;box-shadow:0 2px 8px rgba(0,0,0,.18);border:2px solid #fff}
+  .gel-ic img{width:100%;height:100%;object-fit:cover}
+  .banner-title{flex:1;color:#fff;font-size:1.9rem;font-weight:700;text-align:center;font-family:Georgia,serif;letter-spacing:-.01em;text-shadow:0 1px 2px rgba(0,0,0,.1)}
+  .menu-ic{width:52px;height:52px;border-radius:10px;background:#8a1e42;display:flex;align-items:center;justify-content:center;flex-shrink:0;box-shadow:inset 0 0 0 1px rgba(255,255,255,.15)}
+  .menu-ic svg{width:26px;height:26px;stroke:#fff;fill:none;stroke-width:2.5;stroke-linecap:round}
+  @media (max-width:480px){.banner-title{font-size:1.3rem}.gel-ic,.menu-ic{width:44px;height:44px}}
+
+  /* Timer bar */
+  .timer-row{padding:18px 20px 14px;display:flex;align-items:center;gap:10px;font-weight:bold;color:#333;font-size:14px;font-family:Arial,sans-serif}
+  .timer-row #timer{background:#f3f3f3;border-radius:30px;padding:5px 12px;font-weight:bold;font-family:monospace;color:#000}
+  .divider{border:0;border-top:1px solid #838383;margin:0 20px}
+
+  /* Viewer counter */
+  .viewer-wrap{padding:22px 14px;text-align:center;background:#fff;font-family:Arial,Helvetica,sans-serif}
+  .viewing{font-size:clamp(13px,3.6vw,15px);color:#6b6b6b;line-height:1.3}
+  .viewing .n{color:#d32f2f;font-weight:700;margin-right:6px;display:inline-block;min-width:32px}
+
+  /* VSL */
+  .vsl-wrap{padding:16px 12px 24px}
+  vturb-smartplayer{display:block;margin:0 auto;width:100%;max-width:640px;border-radius:10px;overflow:hidden}
+
+  /* Expert */
+  .expert{padding:28px 20px 40px;text-align:center;background:#fff}
+  .expert img{width:100%;max-width:320px;border-radius:16px;margin:0 auto 14px;box-shadow:0 8px 24px rgba(0,0,0,.12)}
+  .expert .name{font-family:Georgia,serif;font-size:1.15rem;color:#2d1810;font-weight:700;margin-bottom:4px}
+  .expert .cred{font-size:.85rem;color:#8a6a5a;letter-spacing:.04em;text-transform:uppercase}
+</style>
+</head>
+<body>
+
+<header class="banner">
+  <div class="banner-inner">
+    <div class="gel-ic"><img src="Gelatina%20imagem.webp" alt=""></div>
+    <h1 class="banner-title">Salud Rosa</h1>
+    <div class="menu-ic" aria-label="Menú">
+      <svg viewBox="0 0 24 24"><line x1="4" y1="7" x2="20" y2="7"/><line x1="4" y1="12" x2="20" y2="12"/><line x1="4" y1="17" x2="20" y2="17"/></svg>
+    </div>
+  </div>
+</header>
+
+<main class="container">
+
+  <div class="timer-row">
+    <span>ESTE VIDEO YA NO ESTÁ DISPONIBLE</span>
+    <span id="timer">55:00</span>
+  </div>
+  <hr class="divider">
+
+  <div class="viewer-wrap">
+    <div class="viewing"><span class="n" id="viewerCount">596</span>personas están viendo esto ahora.</div>
+  </div>
+
+  <div class="vsl-wrap">
+    <vturb-smartplayer id="ab-69e67f6ea8ce2d72e1d2aebf" style="display:block;margin:0 auto;width:100%;"></vturb-smartplayer>
+  </div>
+
+  <section class="expert">
+    <img src="Imagem-sophia.webp" alt="Sophia">
+    <div class="name">Sophia</div>
+    <div class="cred">Nutrióloga · Mujer 30+</div>
+  </section>
+
+</main>
+
+<script>
+  // Timer 55min countdown
+  let time = 55 * 60;
+  const timerEl = document.getElementById('timer');
+  function updateTimer(){
+    const m = Math.floor(time/60), s = time%60;
+    timerEl.textContent = String(m).padStart(2,'0')+':'+String(s).padStart(2,'0');
+    if (time > 0) time--;
+  }
+  updateTimer();
+  setInterval(updateTimer, 1000);
+
+  // Viewer counter animation
+  const vEl = document.getElementById('viewerCount');
+  let cur = parseInt(vEl.textContent,10) || 596;
+  const randInt = (a,b) => Math.floor(Math.random()*(b-a+1))+a;
+  function tickV(){ cur += randInt(1,4); vEl.textContent = cur; setTimeout(tickV, randInt(1200,3200)); }
+  setTimeout(tickV, randInt(800,1600));
+</script>
+
+<!-- vturb player loader -->
+<script type="text/javascript">
+  var s=document.createElement("script");
+  s.src="https://scripts.converteai.net/1931009e-87e8-44a9-862f-c0f557162b5e/ab-test/69e67f6ea8ce2d72e1d2aebf/player.js";
+  s.async=!0;
+  document.head.appendChild(s);
+</script>
+
+</body>
+</html>
