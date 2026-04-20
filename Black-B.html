@@ -11,18 +11,14 @@
   .container{max-width:680px;margin:0 auto;padding:0}
   img{max-width:100%;display:block}
 
-  /* Header — Bienestar Femenino */
+  /* Header — rose solid with centered gelatina */
   .banner{background:#f472a0;padding:14px 16px;border-bottom:3px solid #d94e7f}
-  .banner-inner{max-width:1100px;margin:0 auto;display:flex;align-items:center;gap:14px}
-  .brand{display:flex;align-items:center;gap:12px;flex:1}
-  .gel-ic{width:54px;height:54px;border-radius:50%;overflow:hidden;background:#fff;flex-shrink:0;border:3px solid #fff;box-shadow:0 3px 10px rgba(0,0,0,.18)}
-  .gel-ic img{width:100%;height:100%;object-fit:cover}
-  .brand-text{color:#fff;font-family:Georgia,serif;letter-spacing:-.01em}
-  .brand-text .b1{font-size:1.5rem;font-weight:700;line-height:1;letter-spacing:.02em}
-  .brand-text .b2{font-size:.7rem;font-weight:500;letter-spacing:.25em;text-transform:uppercase;opacity:.85;margin-top:2px}
-  .menu-ic{width:48px;height:48px;border-radius:10px;background:rgba(255,255,255,.18);display:flex;align-items:center;justify-content:center;flex-shrink:0;backdrop-filter:blur(4px)}
-  .menu-ic svg{width:24px;height:24px;stroke:#fff;fill:none;stroke-width:2.5;stroke-linecap:round}
-  @media (max-width:480px){.brand-text .b1{font-size:1.15rem}.brand-text .b2{font-size:.6rem;letter-spacing:.2em}.gel-ic{width:46px;height:46px}.menu-ic{width:42px;height:42px}}
+  .banner-inner{max-width:1100px;margin:0 auto;display:flex;align-items:center;justify-content:space-between;gap:14px}
+  .icon-box{display:inline-flex;align-items:center;justify-content:center;width:48px;height:48px;background:rgba(255,255,255,.18);border-radius:10px;flex-shrink:0;backdrop-filter:blur(4px)}
+  .icon-box svg{width:24px;height:24px;stroke:#fff;fill:none;stroke-width:2.5;stroke-linecap:round}
+  .gel-center{width:72px;height:72px;border-radius:50%;overflow:hidden;background:#fff;flex-shrink:0;border:3px solid #fff;box-shadow:0 4px 14px rgba(0,0,0,.2)}
+  .gel-center img{width:100%;height:100%;object-fit:cover}
+  @media (max-width:480px){.icon-box{width:42px;height:42px}.icon-box svg{width:22px;height:22px}.gel-center{width:60px;height:60px}}
 
   /* Timer bar */
   .timer-row{padding:18px 20px 14px;display:flex;align-items:center;gap:10px;font-weight:bold;color:#333;font-size:14px;font-family:Arial,sans-serif}
@@ -38,28 +34,22 @@
   .vsl-wrap{padding:16px 12px 24px}
   vturb-smartplayer{display:block;margin:0 auto;width:100%;max-width:640px;border-radius:10px;overflow:hidden}
 
-  /* Expert — Editorial frame style */
-  .expert{padding:32px 20px 40px;text-align:center;background:linear-gradient(180deg,#fff,#fff8f5)}
-  .expert-frame{display:inline-block;position:relative;padding:12px;background:#fff;border-radius:20px;box-shadow:0 10px 30px rgba(244,114,160,.2);border:1px solid #f3d9e2}
-  .expert-frame img{width:100%;max-width:300px;border-radius:12px}
-  .expert .name{font-family:Georgia,serif;font-size:1.2rem;color:#2d1810;font-weight:700;margin-top:16px}
-  .expert .cred{font-size:.8rem;color:#d94e7f;letter-spacing:.12em;text-transform:uppercase;margin-top:4px;font-weight:600}
+  /* Expert — clean image only */
+  .expert{padding:32px 20px 40px;text-align:center;background:#fff}
+  .expert img{width:100%;max-width:320px;margin:0 auto}
 </style>
 </head>
 <body>
 
 <header class="banner">
   <div class="banner-inner">
-    <div class="brand">
-      <div class="gel-ic"><img src="Gelatina%20imagem.webp" alt=""></div>
-      <div class="brand-text">
-        <div class="b1">Bienestar Femenino</div>
-        <div class="b2">Salud · Mujer 30+</div>
-      </div>
-    </div>
-    <div class="menu-ic" aria-label="Menú">
+    <span class="icon-box" aria-label="Buscar">
+      <svg viewBox="0 0 24 24"><circle cx="11" cy="11" r="7"/><line x1="16.5" y1="16.5" x2="21" y2="21"/></svg>
+    </span>
+    <div class="gel-center"><img src="Gelatina%20imagem.webp" alt=""></div>
+    <span class="icon-box" aria-label="Menú">
       <svg viewBox="0 0 24 24"><line x1="4" y1="7" x2="20" y2="7"/><line x1="4" y1="12" x2="20" y2="12"/><line x1="4" y1="17" x2="20" y2="17"/></svg>
-    </div>
+    </span>
   </div>
 </header>
 
@@ -80,11 +70,7 @@
   </div>
 
   <section class="expert">
-    <div class="expert-frame">
-      <img src="Imagem-sophia.webp" alt="Sophia">
-    </div>
-    <div class="name">Sophia</div>
-    <div class="cred">Nutrióloga · Mujer 30+</div>
+    <img src="Imagem-sophia.webp" alt="">
   </section>
 
 </main>

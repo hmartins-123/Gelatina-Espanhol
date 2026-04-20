@@ -11,15 +11,14 @@
   .container{max-width:680px;margin:0 auto;padding:0}
   img{max-width:100%;display:block}
 
-  /* Header banner — Salud Rosa */
+  /* Header banner — rose gradient with centered gelatina */
   .banner{background:linear-gradient(90deg,#f472a0 0%,#d94e7f 100%);padding:14px 16px}
-  .banner-inner{max-width:1100px;margin:0 auto;display:flex;align-items:center;gap:12px}
-  .gel-ic{width:52px;height:52px;border-radius:12px;overflow:hidden;background:#fff;flex-shrink:0;box-shadow:0 2px 8px rgba(0,0,0,.18);border:2px solid #fff}
-  .gel-ic img{width:100%;height:100%;object-fit:cover}
-  .banner-title{flex:1;color:#fff;font-size:1.9rem;font-weight:700;text-align:center;font-family:Georgia,serif;letter-spacing:-.01em;text-shadow:0 1px 2px rgba(0,0,0,.1)}
-  .menu-ic{width:52px;height:52px;border-radius:10px;background:#8a1e42;display:flex;align-items:center;justify-content:center;flex-shrink:0;box-shadow:inset 0 0 0 1px rgba(255,255,255,.15)}
-  .menu-ic svg{width:26px;height:26px;stroke:#fff;fill:none;stroke-width:2.5;stroke-linecap:round}
-  @media (max-width:480px){.banner-title{font-size:1.3rem}.gel-ic,.menu-ic{width:44px;height:44px}}
+  .banner-inner{max-width:1100px;margin:0 auto;display:flex;align-items:center;justify-content:space-between;gap:12px}
+  .icon-box{display:inline-flex;align-items:center;justify-content:center;width:52px;height:52px;background:#8a1e42;border-radius:10px;flex-shrink:0;box-shadow:inset 0 0 0 1px rgba(255,255,255,.15),0 2px 6px rgba(0,0,0,.15)}
+  .icon-box svg{width:26px;height:26px;stroke:#fff;fill:none;stroke-width:2.5;stroke-linecap:round}
+  .gel-center{width:72px;height:72px;border-radius:50%;overflow:hidden;background:#fff;flex-shrink:0;border:3px solid #fff;box-shadow:0 4px 14px rgba(0,0,0,.2)}
+  .gel-center img{width:100%;height:100%;object-fit:cover}
+  @media (max-width:480px){.icon-box{width:44px;height:44px}.icon-box svg{width:22px;height:22px}.gel-center{width:60px;height:60px}}
 
   /* Timer bar */
   .timer-row{padding:18px 20px 14px;display:flex;align-items:center;gap:10px;font-weight:bold;color:#333;font-size:14px;font-family:Arial,sans-serif}
@@ -35,22 +34,22 @@
   .vsl-wrap{padding:16px 12px 24px}
   vturb-smartplayer{display:block;margin:0 auto;width:100%;max-width:640px;border-radius:10px;overflow:hidden}
 
-  /* Expert */
+  /* Expert — clean image only */
   .expert{padding:28px 20px 40px;text-align:center;background:#fff}
-  .expert img{width:100%;max-width:320px;border-radius:16px;margin:0 auto 14px;box-shadow:0 8px 24px rgba(0,0,0,.12)}
-  .expert .name{font-family:Georgia,serif;font-size:1.15rem;color:#2d1810;font-weight:700;margin-bottom:4px}
-  .expert .cred{font-size:.85rem;color:#8a6a5a;letter-spacing:.04em;text-transform:uppercase}
+  .expert img{width:100%;max-width:320px;margin:0 auto}
 </style>
 </head>
 <body>
 
 <header class="banner">
   <div class="banner-inner">
-    <div class="gel-ic"><img src="Gelatina%20imagem.webp" alt=""></div>
-    <h1 class="banner-title">Salud Rosa</h1>
-    <div class="menu-ic" aria-label="Menú">
+    <span class="icon-box" aria-label="Buscar">
+      <svg viewBox="0 0 24 24"><circle cx="11" cy="11" r="7"/><line x1="16.5" y1="16.5" x2="21" y2="21"/></svg>
+    </span>
+    <div class="gel-center"><img src="Gelatina%20imagem.webp" alt=""></div>
+    <span class="icon-box" aria-label="Menú">
       <svg viewBox="0 0 24 24"><line x1="4" y1="7" x2="20" y2="7"/><line x1="4" y1="12" x2="20" y2="12"/><line x1="4" y1="17" x2="20" y2="17"/></svg>
-    </div>
+    </span>
   </div>
 </header>
 
@@ -71,9 +70,7 @@
   </div>
 
   <section class="expert">
-    <img src="Imagem-sophia.webp" alt="Sophia">
-    <div class="name">Sophia</div>
-    <div class="cred">Nutrióloga · Mujer 30+</div>
+    <img src="Imagem-sophia.webp" alt="">
   </section>
 
 </main>
