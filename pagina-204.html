@@ -1,0 +1,361 @@
+<!-- Convertido de elementor-204-2026-02-01.json -->
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Cloaker · Gelatina Truco</title>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Playfair+Display:wght@600;800&display=swap" rel="stylesheet">
+<style>
+  *,*::before,*::after{box-sizing:border-box}
+  html,body{margin:0;padding:0}
+  body{font-family:'DM Sans',system-ui,-apple-system,sans-serif;color:#2d1810;background:#fff8f5;line-height:1.5}
+  h1,h2,h3{font-family:'Playfair Display',Georgia,serif;margin:0 0 .6em}
+  h1{font-size:3rem;line-height:1.1}
+  h2{font-size:2.2rem;line-height:1.15}
+  h3{font-size:1.5rem}
+  p{margin:0 0 1em}
+  img{max-width:100%;height:auto;display:block}
+  a{color:#f472a0}
+  section{padding:60px 20px}
+  .container{max-width:1100px;margin:0 auto}
+  .columns{display:flex;flex-wrap:wrap;gap:24px}
+  .col{flex:1 1 0;min-width:240px}
+  .col img{margin:0 auto}
+  .btn{display:inline-block;background:#f472a0;color:#fff;padding:16px 32px;border-radius:8px;text-decoration:none;font-weight:700;transition:opacity .2s}
+  .btn:hover{opacity:.9}
+  .placeholder{background:#fff;border:2px dashed #f472a0;padding:16px;color:#b33;font-size:.9rem;margin:12px 0;border-radius:8px}
+  .hide-desktop{display:none}
+  .hide-mobile{display:block}
+  iframe{max-width:100%;border:0}
+  @media (max-width:768px){
+    h1{font-size:2rem}
+    h2{font-size:1.6rem}
+    section{padding:40px 16px}
+    .columns{flex-direction:column}
+    .hide-desktop{display:block}
+    .hide-mobile{display:none}
+  }
+</style>
+</head>
+<body>
+
+<!-- section 1 (vazia) -->
+<section><div class="container"><div class="columns"><div class="col"></div></div></div></section>
+
+<!-- section 2 (mobile only: quiz button image) -->
+<section class="hide-desktop" style="background:#FFFFFF;padding:20px">
+  <div class="container">
+    <div class="columns">
+      <div class="col" style="text-align:center">
+        <img src="https://gelatinadelasfamosas.online/wp-content/uploads/2026/01/BOTAO_QUIZ.png" alt="" style="width:100%;max-width:420px;margin:0 auto">
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- section 3 (desktop only: red header bar) -->
+<section class="hide-mobile" style="background:#b41414;padding:20px">
+  <div class="container">
+    <div class="columns" style="align-items:center">
+      <div class="col" style="text-align:left">
+        <img src="https://gelatinadelasfamosas.online/wp-content/uploads/2026/01/alzheimer-latam.png" alt="" style="width:10%;max-width:80px">
+      </div>
+      <div class="col">
+        <h2 style="color:#FFFFFF;text-align:center;font-family:Roboto,sans-serif;font-weight:600;margin:0">Salud</h2>
+      </div>
+      <div class="col" style="text-align:right">
+        <img src="https://gelatinadelasfamosas.online/wp-content/uploads/2026/01/alzheimer-latam-1.png" alt="" style="width:10%;max-width:80px;margin-left:auto">
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- section 4: timer + divider + headline quote -->
+<section style="padding:20px 16px">
+  <div class="container">
+    <div class="columns">
+      <div class="col">
+
+        <!-- widget html: timer -->
+        <div style="font-family: Arial, sans-serif; display: flex; align-items: center; gap: 10px; font-weight: bold; color: #333; font-size: 14px;">
+          <span>ESTE VIDEO YA NO ESTÁ DISPONIBLE</span>
+          <div id="timer" style="background-color: #f3f3f3; border-radius: 30px; padding: 5px 10px; font-weight: bold; font-family: monospace; color: #000;">
+            55:00
+          </div>
+        </div>
+
+        <script>
+          let time = 55 * 60;
+          const timerEl = document.getElementById("timer");
+          function updateTimer() {
+            const minutes = Math.floor(time / 60);
+            const seconds = time % 60;
+            timerEl.textContent = `${String(minutes).padStart(2, "0")}:${String(seconds).padStart(2, "0")}`;
+            if (time > 0) time--;
+          }
+          setInterval(updateTimer, 1000);
+        </script>
+
+        <!-- widget divider -->
+        <hr style="border:0;border-top:1px solid #838383;margin:20px 0">
+
+        <!-- widget html: quote headline -->
+        <style>
+          .quote-wrap{width:100%;background:#fff;padding: 22px 14px;display:flex;justify-content:center;font-family: Arial, Helvetica, sans-serif;}
+          .quote-inner{width: 100%;max-width: 520px;margin: 0 auto;text-align:center;}
+          .viewing{font-size: clamp(12px, 3.6vw, 15px);color:#6b6b6b;line-height:1.2;margin: 0 0 14px 0;}
+          .viewing .n{color:#d32f2f;font-weight:700;margin-right:6px;display:inline-block;min-width: 28px;}
+          .headline{margin: 0 0 16px 0;font-weight: 900;font-size: clamp(28px, 8.5vw, 52px);line-height: 1.02;color:#111;letter-spacing: -0.3px;}
+          .headline .line{ display:block; }
+          .headline .red{ color:#d32f2f; }
+          .sub{margin: 0 auto 14px auto;font-size: clamp(14px, 4.2vw, 18px);color:#555;line-height:1.25;max-width: 320px;}
+          .cta{margin: 0 0 16px 0;font-size: clamp(16px, 4.8vw, 22px);font-weight: 900;color:#111;}
+          .meta{font-size: clamp(11px, 3.3vw, 13px);color:#8a8a8a;line-height:1.35;}
+          .dot{ padding:0 10px; color:#b0b0b0; }
+          @media (max-width:360px){
+            .quote-wrap{ padding: 18px 10px; }
+            .dot{ padding:0 6px; }
+            .sub{ max-width: 280px; }
+          }
+        </style>
+
+        <div class="quote-wrap">
+          <div class="quote-inner">
+            <div class="viewing">
+              <span class="n" id="viewerCount">596</span>personas están viendo esto ahora.
+            </div>
+            <p class="headline">
+              <span class="line">"Nunca imaginé</span>
+              <span class="line">que esta receta</span>
+              <span class="line">de <span class="red">Gelatina</span></span>
+              <span class="line"><span class="red">bariátrica</span> me</span>
+              <span class="line">cambiaría tanto."</span>
+            </p>
+            <p class="sub">
+              Pero después de 4 semanas, ¡usé<br>
+              el vestido de mis sueños!
+            </p>
+            <p class="cta">— ¡Míralo ahora!</p>
+          </div>
+        </div>
+
+        <script>
+          const el = document.getElementById("viewerCount");
+          let current = parseInt(el.textContent.trim(), 10) || 596;
+          const minAdd = 1, maxAdd = 4;
+          const minDelay = 1200, maxDelay = 3200;
+          const randInt = (min, max) => Math.floor(Math.random() * (max - min + 1)) + min;
+          function tick(){
+            current += randInt(minAdd, maxAdd);
+            el.textContent = String(current);
+            setTimeout(tick, randInt(minDelay, maxDelay));
+          }
+          setTimeout(tick, randInt(800, 1600));
+        </script>
+
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- section 5: VSL player + Facebook comments -->
+<section style="padding:20px 16px">
+  <div class="container">
+    <div class="columns">
+      <div class="col">
+
+        <!-- widget html: VSL player (vturb) -->
+        <vturb-smartplayer id="vid-6969442435c2a62b3c0ee9ee" style="display: block; margin: 0 auto; width: 100%; max-width: 400px;"></vturb-smartplayer>
+        <script type="text/javascript">
+          var s=document.createElement("script");
+          s.src="https://scripts.converteai.net/1931009e-87e8-44a9-862f-c0f557162b5e/players/6969442435c2a62b3c0ee9ee/v4/player.js";
+          s.async=!0;
+          document.head.appendChild(s);
+        </script>
+
+        <!-- widget html: Facebook comments -->
+        <style>
+          .fb-comments-wrap{max-width: 680px;margin: 24px auto;font-family: Arial, Helvetica, sans-serif;color:#1c1e21;}
+          .fb-count{font-size:14px;color:#65676b;margin: 0 0 12px 0;padding-bottom: 10px;border-bottom: 1px solid #e4e6eb;}
+          .fb-comment{display:flex;gap:10px;align-items:flex-start;margin: 14px 0;}
+          .fb-comment.fb-reply{margin-left: 44px;padding-left: 10px;border-left: 2px solid #f0f2f5;}
+          .fb-avatar{width:40px;height:40px;border-radius:50%;background-size: cover;background-position:center;background-color:#e4e6eb;flex: 0 0 40px;}
+          .fb-bubble{background:#f0f2f5;border-radius: 18px;padding: 10px 12px;max-width: 560px;position: relative;}
+          .fb-name{font-weight:700;font-size:13px;color:#050505;margin-bottom: 2px;}
+          .fb-text{font-size:14px;line-height:1.35;color:#050505;white-space: pre-line;}
+          .fb-inline-photo{width: 100%;max-width: 360px;border-radius: 12px;margin-top: 10px;display:block;border: 1px solid #dadde1;background:#fff;}
+          .fb-actions{font-size:12px;color:#65676b;margin-top: 6px;padding-left: 6px;}
+          .fb-actions span{cursor:pointer;}
+          .fb-reactions{display:inline-flex;align-items:center;gap:6px;font-size:12px;color:#65676b;margin-top: 6px;margin-left: 6px;background:#fff;border: 1px solid #e4e6eb;border-radius: 999px;padding: 4px 8px;box-shadow: 0 1px 2px rgba(0,0,0,.06);width: fit-content;}
+          .fb-reactions strong{font-weight:700;color:#65676b;margin-left: 2px;}
+          @media (max-width:520px){
+            .fb-bubble{ max-width: 100%; }
+            .fb-inline-photo{ max-width: 100%; }
+            .fb-comment.fb-reply{ margin-left: 28px; }
+            .fb-avatar{ width:36px; height:36px; flex-basis:36px; }
+          }
+        </style>
+
+        <div class="fb-comments-wrap">
+          <div class="fb-count">Mostrando 13 de 37,542 comentarios</div>
+
+          <div class="fb-comment">
+            <div class="fb-avatar" style="background-image:url('https://vidasalud24.site/pagenew2/fotos/SarahMoore2.png')"></div>
+            <div>
+              <div class="fb-bubble">
+                <div class="fb-name">Patricia Gómez</div>
+                <div class="fb-text">Al principio era escéptica, pero después de probarlo estoy encantada.
+Finalmente alcancé mi peso ideal y esto me ayudó a cumplir mis otros objetivos también.</div>
+                <img class="fb-inline-photo" src="https://vidasalud24.site/pagenew2/fotos/depoimento%201.webp" alt="Resultado Patricia Gómez">
+              </div>
+              <div class="fb-actions"><span>Me gusta</span> · <span>Responder</span> · hace 24 min</div>
+              <div class="fb-reactions"><span>&#10084;&#65039;</span><span>&#128522;</span><span>&#128077;</span><strong>32</strong></div>
+            </div>
+          </div>
+
+          <div class="fb-comment fb-reply">
+            <div class="fb-avatar" style="background-image:url('https://vidasalud24.site/pagenew/fotos/Jenniferavery.jpeg')"></div>
+            <div>
+              <div class="fb-bubble">
+                <div class="fb-name">Jennifer Avery</div>
+                <div class="fb-text">Chica, yo también perdí 11 libras en solo una semana.
+¡Este truco de gelatina es increíble!</div>
+              </div>
+              <div class="fb-actions"><span>Me gusta</span> · <span>Responder</span> · hace 46 min</div>
+              <div class="fb-reactions"><span>&#10084;&#65039;</span><span>&#128522;</span><span>&#128077;</span><strong>21</strong></div>
+            </div>
+          </div>
+
+          <div class="fb-comment">
+            <div class="fb-avatar" style="background-image:url('https://vidasalud24.site/pagenew/fotos/JessicaBrown.jpeg')"></div>
+            <div>
+              <div class="fb-bubble">
+                <div class="fb-name">Jessica Brown</div>
+                <div class="fb-text">He estado usando este truco de gelatina por poco más de 3 semanas y
+¡mis pantalones ya se me caen! ¡Incluso mi esposo me elogió hoy!
+Gracias por ayudar a tanta gente sin pedir nada a cambio.</div>
+                <img class="fb-inline-photo" src="https://vidasalud24.site/pagenew2/fotos/Depoimento2.png" alt="Resultado Jessica Brown">
+              </div>
+              <div class="fb-actions"><span>Me gusta</span> · <span>Responder</span> · hace 58 min</div>
+              <div class="fb-reactions"><span>&#10084;&#65039;</span><span>&#128522;</span><span>&#128077;</span><strong>18</strong></div>
+            </div>
+          </div>
+
+          <div class="fb-comment">
+            <div class="fb-avatar" style="background-image:url('https://vidasalud24.site/pagenew/fotos/Olivia-S-Taylor.jpeg')"></div>
+            <div>
+              <div class="fb-bubble">
+                <div class="fb-name">Olivia S. Taylor</div>
+                <div class="fb-text">Por fin alguien que explica todo en solo unos minutos y sin jerga médica.
+¡Empiezo esta mañana! Gracias por ser tan clara y directa.</div>
+              </div>
+              <div class="fb-actions"><span>Me gusta</span> · <span>Responder</span> · hace 2 h</div>
+              <div class="fb-reactions"><span>&#10084;&#65039;</span><span>&#128522;</span><span>&#128077;</span><strong>26</strong></div>
+            </div>
+          </div>
+
+          <div class="fb-comment">
+            <div class="fb-avatar" style="background-image:url('https://vidasalud24.site/pagenew/fotos/AshleyDavis.jpeg')"></div>
+            <div>
+              <div class="fb-bubble">
+                <div class="fb-name">Ashley Davis</div>
+                <div class="fb-text">Antes la ansiedad por comer me controlaba; siempre estaba comiendo dulces sin parar.
+Pero ahora ya no los deseo, y ya bajé 19 libras en solo dos semanas.
+No me sentía tan segura desde hace años.</div>
+              </div>
+              <div class="fb-actions"><span>Me gusta</span> · <span>Responder</span> · hace 3 h</div>
+              <div class="fb-reactions"><span>&#10084;&#65039;</span><span>&#128522;</span><span>&#128077;</span><strong>13</strong></div>
+            </div>
+          </div>
+
+          <div class="fb-comment fb-reply">
+            <div class="fb-avatar" style="background-image:url('https://vidasalud24.site/pagenew/fotos/EmilyJohnson.jpeg')"></div>
+            <div>
+              <div class="fb-bubble">
+                <div class="fb-name">Emily Johnson</div>
+                <div class="fb-text">Eso es increíble, hermosa.
+¿Hiciste algo más en tu rutina además de la receta?</div>
+              </div>
+              <div class="fb-actions"><span>Me gusta</span> · <span>Responder</span> · hace 46 min</div>
+              <div class="fb-reactions"><span>&#10084;&#65039;</span><span>&#128522;</span><span>&#128077;</span><strong>1</strong></div>
+            </div>
+          </div>
+
+          <div class="fb-comment fb-reply">
+            <div class="fb-avatar" style="background-image:url('https://vidasalud24.site/pagenew/fotos/AshleyDavis.jpeg')"></div>
+            <div>
+              <div class="fb-bubble">
+                <div class="fb-name">Ashley Davis</div>
+                <div class="fb-text">No, ¡solo la receta! No hice dietas ni pisé el gimnasio.
+Es una locura cómo algo tan simple me está ayudando a bajar tanto de peso.</div>
+              </div>
+              <div class="fb-actions"><span>Me gusta</span> · <span>Responder</span> · hace 17 min</div>
+              <div class="fb-reactions"><span>&#10084;&#65039;</span><span>&#128522;</span><span>&#128077;</span><strong>15</strong></div>
+            </div>
+          </div>
+
+          <div class="fb-comment">
+            <div class="fb-avatar" style="background-image:url('https://vidasalud24.site/pagenew/fotos/morganHarper.jpeg')"></div>
+            <div>
+              <div class="fb-bubble">
+                <div class="fb-name">Morgan Harper</div>
+                <div class="fb-text">¿Alguien sabe si esto realmente funciona?
+Mi médico dice que tengo obesidad extrema y me siento bastante desesperada.</div>
+              </div>
+              <div class="fb-actions"><span>Me gusta</span> · <span>Responder</span> · hace 12 min</div>
+              <div class="fb-reactions"><span>&#10084;&#65039;</span><span>&#128522;</span><span>&#128077;</span><strong>21</strong></div>
+            </div>
+          </div>
+
+          <div class="fb-comment fb-reply">
+            <div class="fb-avatar" style="background-image:url('https://vidasalud24.site/pagenew/fotos/GraceWilson.jpeg')"></div>
+            <div>
+              <div class="fb-bubble">
+                <div class="fb-name">Grace Wilson</div>
+                <div class="fb-text">Investigué en internet y encontré varios artículos científicos que demuestran
+que este truco de gelatina realmente funciona.
+En mi caso, los números en la balanza no paran de bajar —
+¡deberías probarlo tú también!</div>
+              </div>
+              <div class="fb-actions"><span>Me gusta</span> · <span>Responder</span> · hace 4 min</div>
+              <div class="fb-reactions"><span>&#10084;&#65039;</span><span>&#128522;</span><span>&#128077;</span><strong>1</strong></div>
+            </div>
+          </div>
+
+          <div class="fb-comment fb-reply">
+            <div class="fb-avatar" style="background-image:url('https://vidasalud24.site/pagenew/fotos/morganHarper.jpeg')"></div>
+            <div>
+              <div class="fb-bubble">
+                <div class="fb-name">Morgan Harper</div>
+                <div class="fb-text">¡Gracias! Ya estoy anotando todos los ingredientes.
+¡Confío en que esto va a funcionar!</div>
+              </div>
+              <div class="fb-actions"><span>Me gusta</span> · <span>Responder</span> · hace 1 min</div>
+              <div class="fb-reactions"><span>&#10084;&#65039;</span><span>&#128522;</span><span>&#128077;</span><strong>1</strong></div>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- section 6: closing heading + footer links -->
+<section style="padding:30px 16px">
+  <div class="container">
+    <div class="columns">
+      <div class="col" style="text-align:center">
+        <h2 style="color:#000000;font-family:Roboto,sans-serif;font-weight:600;text-align:center">¡Esta publicación ya no recibe comentarios!</h2>
+        <div style="font-family:Roboto,sans-serif;font-size:13px;font-weight:400;text-align:center">
+          <p><a href="https://gelatinadelasfamosas.online/termos/">Términos de Uso</a> | <a href="https://gelatinadelasfamosas.online/politica/">Política de Privacidad&nbsp;</a></p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+</body>
+</html>
