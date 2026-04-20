@@ -10,11 +10,11 @@
   *,*::before,*::after{box-sizing:border-box}
   html,body{margin:0;padding:0}
   body{font-family:'DM Sans',system-ui,-apple-system,sans-serif;color:#2d1810;background:#ffffff;line-height:1.5}
+  .salud-bar{display:flex;align-items:center;gap:14px}
+  .salud-title{color:#fff;font-family:Roboto,sans-serif;font-weight:700;margin:0;font-size:2rem;flex:1 1 auto;text-align:center}
   .icon-box{display:inline-flex;align-items:center;justify-content:center;width:56px;height:56px;background:#8a1010;border-radius:8px;box-shadow:inset 0 0 0 1px rgba(255,255,255,.15),0 2px 6px rgba(0,0,0,.15);flex-shrink:0}
   .icon-box svg{width:28px;height:28px;stroke:#fff;fill:none;stroke-width:2.5;stroke-linecap:round;stroke-linejoin:round}
-  .salud-bar .col{flex:initial}
-  .salud-bar .col-center{flex:1 1 auto;min-width:0}
-  @media (max-width:768px){.icon-box{width:44px;height:44px}.icon-box svg{width:22px;height:22px}}
+  @media (max-width:768px){.icon-box{width:44px;height:44px}.icon-box svg{width:22px;height:22px}.salud-title{font-size:1.5rem}.salud-bar{gap:10px}}
   h1,h2,h3{font-family:'Playfair Display',Georgia,serif;margin:0 0 .6em}
   h1{font-size:3rem;line-height:1.1}
   h2{font-size:2.2rem;line-height:1.15}
@@ -59,23 +59,17 @@
   </div>
 </section>
 
-<!-- section 3 (desktop only: red header bar with Salud + icons) -->
-<section class="hide-mobile" style="background:#b41414;padding:16px 20px">
+<!-- section 3: red header bar with Salud + icons (desktop + mobile) -->
+<section style="background:#b41414;padding:16px 20px">
   <div class="container">
-    <div class="columns salud-bar" style="align-items:center;gap:14px">
-      <div class="col" style="text-align:left">
-        <span class="icon-box" aria-label="Buscar">
-          <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="11" cy="11" r="7"/><line x1="16.5" y1="16.5" x2="21" y2="21"/></svg>
-        </span>
-      </div>
-      <div class="col" style="text-align:left">
-        <span class="icon-box" aria-label="Menú">
-          <svg viewBox="0 0 24 24" aria-hidden="true"><line x1="4" y1="7" x2="20" y2="7"/><line x1="4" y1="12" x2="20" y2="12"/><line x1="4" y1="17" x2="20" y2="17"/></svg>
-        </span>
-      </div>
-      <div class="col col-center">
-        <h2 style="color:#FFFFFF;text-align:center;font-family:Roboto,sans-serif;font-weight:700;margin:0;font-size:2rem">Salud</h2>
-      </div>
+    <div class="salud-bar">
+      <span class="icon-box" aria-label="Buscar">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="11" cy="11" r="7"/><line x1="16.5" y1="16.5" x2="21" y2="21"/></svg>
+      </span>
+      <span class="icon-box" aria-label="Menú">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><line x1="4" y1="7" x2="20" y2="7"/><line x1="4" y1="12" x2="20" y2="12"/><line x1="4" y1="17" x2="20" y2="17"/></svg>
+      </span>
+      <h2 class="salud-title">Salud</h2>
     </div>
   </div>
 </section>
