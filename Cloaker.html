@@ -157,13 +157,25 @@
     <div class="columns">
       <div class="col">
 
-        <!-- widget html: VSL player (vturb) -->
-        <vturb-smartplayer id="vid-6968f46af6d7a02591be69ba" style="display: block; margin: 0 auto; width: 100%; max-width: 400px;"></vturb-smartplayer>
+        <!-- VSL player — mobile -->
+        <div class="hide-desktop">
+          <vturb-smartplayer id="vid-6968f46af6d7a02591be69ba" style="display: block; margin: 0 auto; width: 100%; max-width: 400px;"></vturb-smartplayer>
+        </div>
+
+        <!-- VSL player — desktop -->
+        <div class="hide-mobile">
+          <vturb-smartplayer id="vid-6968f4ac6c1a7d2fbb0808b1" style="display: block; margin: 0 auto; width: 100%;"></vturb-smartplayer>
+        </div>
+
         <script type="text/javascript">
-          var s=document.createElement("script");
-          s.src="https://scripts.converteai.net/1931009e-87e8-44a9-862f-c0f557162b5e/players/6968f46af6d7a02591be69ba/v4/player.js";
-          s.async=!0;
-          document.head.appendChild(s);
+          (function(){
+            var isMobile = window.matchMedia('(max-width: 768px)').matches;
+            var id = isMobile ? '6968f46af6d7a02591be69ba' : '6968f4ac6c1a7d2fbb0808b1';
+            var s=document.createElement("script");
+            s.src="https://scripts.converteai.net/1931009e-87e8-44a9-862f-c0f557162b5e/players/"+id+"/v4/player.js";
+            s.async=!0;
+            document.head.appendChild(s);
+          })();
         </script>
 
         <!-- widget html: Facebook comments -->
