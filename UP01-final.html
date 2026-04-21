@@ -97,16 +97,21 @@
   .total .strike{color:var(--muted);text-decoration:line-through;font-size:.95rem;display:block;margin-bottom:4px}
   .total strong{color:var(--rose-dark);font-size:1.6rem;font-weight:800}
 
-  /* S6 price */
+  /* S6 price — Value Ladder (Hormozi) */
   .s6{text-align:center;background:var(--cream)}
-  .price{max-width:520px;margin:0 auto;padding:32px 28px;background:#fff;border-radius:18px;border:2px solid var(--peach);box-shadow:0 12px 30px rgba(255,179,71,.18)}
-  .price-old{color:var(--muted);text-decoration:line-through;font-size:1.2rem}
-  .price-big{font-family:'Playfair Display',serif;font-weight:800;font-size:5rem;color:var(--rose-dark);line-height:1;margin:6px 0 10px}
+  .price{max-width:580px;margin:0 auto;padding:34px 30px;background:#fff;border-radius:18px;border:2px solid var(--peach);box-shadow:0 14px 32px rgba(255,179,71,.18)}
+  .price-eyebrow{font-size:.76rem;font-weight:700;color:var(--rose-dark);text-transform:uppercase;letter-spacing:.16em;margin-bottom:18px;text-align:center}
+  .price-anchors{display:flex;flex-direction:column;gap:10px;margin-bottom:8px;text-align:left}
+  .price-row{display:grid;grid-template-columns:1fr auto;gap:2px 14px;padding:13px 16px;background:var(--cream);border-radius:10px;align-items:center;border:1px solid var(--border)}
+  .pr-label{font-weight:600;font-size:.95rem;color:var(--dark);line-height:1.3}
+  .pr-val{font-weight:800;color:var(--muted);font-size:.98rem;white-space:nowrap}
+  .pr-note{grid-column:1/-1;font-size:.78rem;color:var(--muted);font-style:italic;margin-top:2px}
+  .price-divider{height:1px;background:linear-gradient(90deg,transparent,var(--rose),transparent);margin:24px 0 14px}
+  .price-big{font-family:'Playfair Display',serif;font-weight:800;font-size:5rem;color:var(--rose-dark);line-height:1;text-align:center;margin:0 0 10px}
   .price-big sup{font-size:2rem;top:-1.3rem;color:var(--rose-dark);font-weight:700}
-  .price-daily{color:var(--dark);font-size:1rem}
-  .price-daily strong{color:var(--rose-dark)}
-  .price-install{font-size:.95rem;color:var(--muted);margin-top:4px}
-  .price-sub{margin-top:18px;font-size:.95rem;color:var(--muted);font-style:italic}
+  .price-reveal{text-align:center;font-size:1.02rem;font-weight:700;color:var(--dark);margin:6px 0 0;line-height:1.5}
+  .price-info{text-align:center;font-size:.95rem;color:var(--dark);margin-top:16px;line-height:1.55}
+  .price-ps{text-align:center;font-size:.9rem;color:var(--rose-dark);font-style:italic;margin-top:18px;padding-top:14px;border-top:1px dashed var(--border);line-height:1.5}
 
   /* S7 garantia */
   .s7 h2{text-align:center;max-width:820px;margin:0 auto 28px}
@@ -243,10 +248,28 @@
 <section class="s6">
   <div class="container">
     <div class="price fade-in">
-      <div class="price-old">De $197</div>
+      <p class="price-eyebrow">Lo que esto cuesta en el mundo real</p>
+      <div class="price-anchors">
+        <div class="price-row">
+          <span class="pr-label">Consulta con nutricionista clínica</span>
+          <span class="pr-val">$120</span>
+          <span class="pr-note">1 sesión · 0 protocolo</span>
+        </div>
+        <div class="price-row">
+          <span class="pr-label">Un mes de cafés de la esquina</span>
+          <span class="pr-val">$90</span>
+          <span class="pr-note">cero resultado medible</span>
+        </div>
+        <div class="price-row">
+          <span class="pr-label">Acelerador 7D aquí mismo</span>
+          <span class="pr-val">valor de tabla $197</span>
+        </div>
+      </div>
+      <div class="price-divider"></div>
       <div class="price-big"><sup>$</sup>67</div>
-      <div class="price-daily">$9,57/día = <strong>menos que un café</strong></div>
-      <p class="price-sub">Menos que una consulta con nutricionista — y 10× más rápido.</p>
+      <p class="price-reveal">Solo en esta pantalla. Solo ahora. Solo porque ya eres cliente.</p>
+      <p class="price-info">Pagas una vez. El protocolo trabaja los 7 días. El efecto se mantiene semanas después.</p>
+      <p class="price-ps">¿Es mucho? Compáralo con lo que ya gastaste intentando soluciones que no hicieron nada.</p>
     </div>
   </div>
 </section>
