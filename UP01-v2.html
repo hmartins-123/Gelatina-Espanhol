@@ -4,7 +4,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Acelerador de Resultados · Oferta exclusiva</title>
-<meta name="description" content="Oferta única post-compra — baja 2 a 4 kg en 7 días con el Protocolo GLP-1 Natural. $67 y garantía de 60 días.">
+<meta name="description" content="Oferta única post-compra — Acelerador de Resultados 7D con té milenario. Solo $67 y garantía de 60 días.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Playfair+Display:wght@600;700;800&display=swap" rel="stylesheet">
@@ -14,7 +14,8 @@
     --peach:#ffb347;--peach-dark:#e89420;
     --cream:#fff8f5;--dark:#2d1810;
     --muted:#6b5a52;--border:#f3d9e2;
-    --gold:#d4a017;--bg:#ffffff;
+    --gold:#d4a017;--green:#0b8b00;--green-btn:#2ca400;
+    --bg:#ffffff;
   }
   *{box-sizing:border-box;margin:0;padding:0}
   html{scroll-behavior:smooth}
@@ -35,127 +36,89 @@
   @keyframes pulseTimer{0%,100%{transform:scale(1)}50%{transform:scale(1.08)}}
 
   .container{max-width:960px;margin:0 auto;padding:0 24px}
-  section{padding:56px 0}
-  section.soft{background:var(--cream)}
+  section{padding:40px 0}
 
-  /* S1 interrupt */
-  .s1{text-align:center;padding:48px 0 40px}
-  .tag{display:inline-block;background:var(--dark);color:#fff;font-size:.74rem;font-weight:700;letter-spacing:.12em;padding:7px 14px;border-radius:999px;margin-bottom:22px;text-transform:uppercase}
-  .s1 h1 .line2{display:block;font-family:'DM Sans',sans-serif;font-size:1.25rem;font-weight:500;color:var(--muted);margin-top:14px;line-height:1.4}
-  .s1 .sub{font-size:1.1rem;color:var(--muted);max-width:680px;margin:20px auto 0}
+  /* S1 Pattern interrupt — red banner + yellow pill (original Elementor copy) */
+  .s1{padding:0;background:#FF0000}
+  .s1-bar{padding:24px 16px;text-align:center}
+  .s1-bar h1{color:#fff;font-family:'DM Sans',sans-serif;font-weight:700;font-size:1.8rem;line-height:1.2;letter-spacing:0}
+  .s1-pill{background:#FFF176;color:#000;font-weight:800;font-size:1.1rem;line-height:1.3;padding:14px 18px;text-align:center;border-radius:0}
 
-  /* S2 hero + dream */
-  .s2 .hero-img{border-radius:16px;overflow:hidden;margin:0 auto 32px;max-width:720px;box-shadow:0 12px 40px rgba(45,24,16,.12)}
-  .s2 h2{text-align:center;max-width:780px;margin:0 auto 28px}
-  .dream-p{font-size:1.05rem;line-height:1.7;background:var(--cream);padding:22px 26px;border-left:4px solid var(--rose);border-radius:4px 12px 12px 4px;margin:0 auto 32px;max-width:760px}
-  .bullets{display:grid;gap:14px;max-width:760px;margin:0 auto}
-  .bullet{display:flex;gap:14px;padding:16px 20px;background:#fff;border:1px solid var(--border);border-radius:12px}
-  .bullet-ic{flex:0 0 28px;width:28px;height:28px;border-radius:50%;background:linear-gradient(135deg,var(--rose),var(--peach));color:#fff;font-weight:700;font-size:.85rem;display:flex;align-items:center;justify-content:center}
-  .bullet-tx{font-size:.98rem;line-height:1.5}
-  .bullet-tx strong{color:var(--rose-dark)}
+  /* S2 Welcome + intro */
+  .s2{padding:36px 0 20px}
+  .welcome{max-width:640px;margin:0 auto 28px;font-size:1.1rem;line-height:1.55;color:var(--dark);text-align:left}
+  .welcome em{font-style:italic;font-weight:800}
+  .welcome .u{text-decoration:underline;font-weight:900}
+  .welcome .bold{font-weight:900}
+  .hero-img{max-width:360px;margin:0 auto 28px;border-radius:16px;overflow:hidden;box-shadow:0 10px 30px rgba(45,24,16,.1)}
+  .offer-desc{max-width:640px;margin:0 auto;font-size:1.05rem;line-height:1.65;color:var(--dark);text-align:left}
+  .offer-desc .it{font-style:italic;text-decoration:underline;font-weight:700}
+  .offer-desc .highlight{color:#d32f2f;font-weight:900}
+  .offer-desc .u{text-decoration:underline;font-weight:700}
 
-  /* S3 mecanismo */
-  .s3 h2{text-align:center;max-width:820px;margin:0 auto 24px}
-  .mech-img{border-radius:16px;overflow:hidden;margin:0 auto 28px;max-width:780px;box-shadow:0 8px 24px rgba(45,24,16,.08)}
-  .mech-intro{max-width:760px;margin:0 auto}
-  .mech-intro p{margin-bottom:14px}
-  .mech-intro em{color:var(--muted);font-style:italic}
-  .mech-close{text-align:center;font-size:1.2rem;margin-top:24px;max-width:620px;margin-left:auto;margin-right:auto;font-weight:500}
-  .mech-close strong{color:var(--rose-dark);font-weight:800}
+  /* S3 Checklist */
+  .s3{padding:20px 0}
+  .checklist-card{max-width:640px;margin:0 auto;background:#f7f7f7;border-radius:14px;padding:22px 24px}
+  .checklist-head{font-weight:800;font-size:1.05rem;margin-bottom:14px;color:var(--dark)}
+  .checklist-items{font-size:1rem;line-height:1.9;color:var(--dark)}
+  .checklist-items .chk{color:var(--green);font-weight:900;margin-right:4px}
 
-  /* S4 proof */
-  .s4 h2{text-align:center;margin-bottom:32px;max-width:760px;margin-left:auto;margin-right:auto}
-  .testimonials{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;max-width:920px;margin:0 auto 28px}
-  .testim{background:#fff;border-radius:14px;padding:22px;border:1px solid var(--border);box-shadow:0 4px 14px rgba(45,24,16,.06)}
-  .testim-head{display:flex;align-items:center;gap:12px;margin-bottom:12px}
-  .avatar{width:44px;height:44px;border-radius:50%;background:var(--cream);color:var(--rose-dark);font-weight:800;font-size:.95rem;display:flex;align-items:center;justify-content:center;border:2px solid var(--rose);font-family:'Playfair Display',serif}
-  .testim-name{font-weight:700;font-size:.95rem}
-  .testim-meta{font-size:.8rem;color:var(--muted)}
-  .testim-body{font-style:italic;font-size:.92rem;line-height:1.55}
-  .testim-stars{color:var(--peach);font-size:.9rem;margin-top:8px;letter-spacing:2px}
-  .stat{max-width:760px;margin:0 auto;text-align:center;padding:18px 24px;background:#fff;border:2px dashed var(--rose);border-radius:12px;font-size:1rem;font-weight:500}
-  .stat strong{color:var(--rose-dark);font-weight:800}
+  /* S4 Bonus */
+  .s4{padding:20px 0}
+  .bonus-card{max-width:640px;margin:0 auto;border:1px solid rgba(11,139,0,.20);background:rgba(11,139,0,.06);border-radius:14px;padding:20px 22px}
+  .bonus-head{font-weight:900;font-size:1.05rem;color:var(--green);margin-bottom:8px}
+  .bonus-body{font-size:1rem;line-height:1.55;color:var(--dark)}
 
-  /* S5 stack */
-  .s5 h2{text-align:center;margin-bottom:32px;max-width:780px;margin-left:auto;margin-right:auto}
-  .s5 .mockup{border-radius:16px;overflow:hidden;margin:0 auto 32px;max-width:560px;box-shadow:0 8px 24px rgba(45,24,16,.1)}
-  .stack{display:grid;gap:14px;max-width:780px;margin:0 auto 28px}
-  .item{display:grid;grid-template-columns:52px 1fr auto;gap:18px;align-items:center;padding:20px 22px;background:#fff;border:1px solid var(--border);border-radius:14px;box-shadow:0 2px 8px rgba(45,24,16,.04)}
-  .item.fast{border:2px solid var(--peach);background:linear-gradient(135deg,#fff8f5,#fff2e6);position:relative}
-  .fast-tag{position:absolute;top:-10px;left:20px;background:var(--peach);color:var(--dark);font-size:.7rem;font-weight:800;padding:4px 10px;border-radius:999px;letter-spacing:.04em}
-  .ic{width:52px;height:52px;border-radius:12px;background:linear-gradient(135deg,var(--rose),var(--peach));color:#fff;font-weight:800;font-size:1rem;display:flex;align-items:center;justify-content:center;font-family:'Playfair Display',serif}
-  .item.fast .ic{background:linear-gradient(135deg,var(--peach),var(--gold))}
-  .item h3{font-size:1.05rem;margin-bottom:4px}
-  .item p{font-size:.92rem;color:var(--muted);line-height:1.45;margin:0}
-  .val{font-weight:800;color:var(--rose-dark);font-size:.95rem;padding:6px 12px;background:var(--cream);border-radius:8px;white-space:nowrap}
-  .total{text-align:center;padding:22px 28px;background:linear-gradient(135deg,var(--cream),#fff);border:2px solid var(--peach);border-radius:14px;max-width:520px;margin:0 auto;font-size:1.1rem}
-  .total .strike{color:var(--muted);text-decoration:line-through;font-size:.95rem;display:block;margin-bottom:4px}
-  .total strong{color:var(--rose-dark);font-size:1.6rem;font-weight:800}
+  /* S5 Mockup + Price */
+  .s5{padding:28px 0}
+  .mockup-img{max-width:520px;margin:0 auto 28px;border-radius:16px;overflow:hidden;box-shadow:0 10px 30px rgba(45,24,16,.1)}
+  .price-box{max-width:520px;margin:0 auto;background:#f2f2f2;border-radius:18px;padding:26px 28px;text-align:center;border:1px solid rgba(0,0,0,.10)}
+  .price-line{font-size:1.35rem;font-weight:800;color:#000;line-height:1.3}
+  .price-old{color:#d32f2f;text-decoration:line-through}
+  .price-green{color:var(--green);font-weight:900}
+  .price-yes{margin-top:14px;font-size:2.1rem;font-weight:900;color:#000;line-height:1.1}
+  .price-big{margin-top:4px;font-size:3.4rem;font-weight:900;color:var(--green);line-height:1;font-family:'Playfair Display',serif}
+  .price-sub{margin-top:14px;font-size:1.2rem;font-weight:800;color:#000;line-height:1.3}
+  .price-cta-text{margin-top:14px;font-size:1rem;color:#000;line-height:1.5}
+  .price-cta-text .bold{font-weight:900}
+  .price-cta-text .green{color:var(--green);font-weight:900}
 
-  /* S6 price */
-  .s6{text-align:center;background:var(--cream)}
-  .price{max-width:520px;margin:0 auto;padding:32px 28px;background:#fff;border-radius:18px;border:2px solid var(--peach);box-shadow:0 12px 30px rgba(255,179,71,.18)}
-  .price-old{color:var(--muted);text-decoration:line-through;font-size:1.2rem}
-  .price-big{font-family:'Playfair Display',serif;font-weight:800;font-size:5rem;color:var(--rose-dark);line-height:1;margin:6px 0 10px}
-  .price-big sup{font-size:2rem;top:-1.3rem;color:var(--rose-dark);font-weight:700}
-  .price-daily{color:var(--dark);font-size:1rem}
-  .price-daily strong{color:var(--rose-dark)}
-  .price-install{font-size:.95rem;color:var(--muted);margin-top:4px}
-  .price-sub{margin-top:18px;font-size:.95rem;color:var(--muted);font-style:italic}
+  /* S6 Guarantee */
+  .s6{padding:36px 0;background:var(--cream)}
+  .s6 h2{text-align:center;max-width:760px;margin:0 auto 22px}
+  .seal{width:170px;height:170px;border-radius:50%;background:linear-gradient(135deg,var(--peach),var(--gold));color:#fff;display:flex;flex-direction:column;align-items:center;justify-content:center;margin:0 auto 20px;text-align:center;padding:14px;box-shadow:0 10px 30px rgba(212,160,23,.3);border:4px solid #fff;outline:2px solid var(--gold)}
+  .seal-1{font-family:'Playfair Display',serif;font-weight:700;font-size:1.1rem}
+  .seal-2{font-family:'Playfair Display',serif;font-weight:800;font-size:2.2rem;line-height:1;margin:2px 0}
+  .seal-3{font-size:.68rem;font-weight:600;letter-spacing:.05em;margin-top:4px;line-height:1.3}
+  .guar-text{max-width:680px;margin:0 auto;text-align:center;font-size:.98rem;line-height:1.6;color:var(--dark)}
 
-  /* S7 garantia */
-  .s7 h2{text-align:center;max-width:820px;margin:0 auto 28px}
-  .seal{width:180px;height:180px;border-radius:50%;background:linear-gradient(135deg,var(--peach),var(--gold));color:#fff;display:flex;flex-direction:column;align-items:center;justify-content:center;margin:0 auto 24px;text-align:center;padding:16px;box-shadow:0 10px 30px rgba(212,160,23,.3);border:4px solid #fff;outline:2px solid var(--gold)}
-  .seal-1{font-family:'Playfair Display',serif;font-weight:700;font-size:1.15rem}
-  .seal-2{font-family:'Playfair Display',serif;font-weight:800;font-size:2.4rem;line-height:1;margin:2px 0}
-  .seal-3{font-size:.72rem;font-weight:600;letter-spacing:.05em;margin-top:4px;line-height:1.3}
-  .guar-text{max-width:720px;margin:0 auto;text-align:center;font-size:1rem;line-height:1.65}
-
-  /* S8 fast */
-  .s8{background:var(--cream)}
-  .s8 h2{text-align:center;max-width:820px;margin:0 auto 24px}
-  .fast-box{max-width:720px;margin:0 auto;background:#fff;border:2px solid var(--peach);border-radius:16px;padding:26px 28px}
-  .fast-box p{font-size:.98rem;line-height:1.6;margin-bottom:14px}
-  .fast-timer{text-align:center;font-size:1.05rem;font-weight:600;color:var(--dark);margin-top:18px;padding-top:18px;border-top:1px dashed var(--border)}
-  .fast-timer .clock2{display:inline-block;background:var(--rose);color:#fff;padding:8px 16px;border-radius:10px;font-weight:800;font-size:1.4rem;font-variant-numeric:tabular-nums;margin-left:8px}
-
-  /* S9 CTA — Hotmart widget */
-  .s9{text-align:center;padding:64px 0}
-  .s9 h2{margin-bottom:22px;max-width:760px;margin-left:auto;margin-right:auto}
-  .s9 .cta-micro{display:flex;justify-content:center;gap:18px;flex-wrap:wrap;margin:22px 0 18px;font-size:.9rem;color:var(--muted);font-weight:500}
+  /* S7 CTA — Hotmart widget */
+  .s7{padding:32px 0 48px;text-align:center}
+  .cta-micro{display:flex;justify-content:center;gap:18px;flex-wrap:wrap;margin:0 0 20px;font-size:.9rem;color:var(--muted);font-weight:500}
   #hotmart-sales-funnel{max-width:720px;margin:0 auto;min-height:120px}
-  .cta-refuse{display:inline-block;margin-top:28px;color:var(--muted);font-size:.88rem;text-decoration:underline;opacity:.7}
+  .cta-refuse{display:inline-block;margin-top:22px;color:var(--muted);font-size:.88rem;text-decoration:underline;opacity:.7}
   .cta-refuse:hover{opacity:1}
 
-  /* S10 P.S. */
-  .ps{background:var(--dark);color:#fff;padding:52px 0}
-  .ps p{max-width:760px;margin:0 auto;font-size:1.05rem;line-height:1.75;color:#f0e4da;text-align:left}
-  .ps strong{color:var(--peach);font-weight:700}
+  footer{background:#1a0d08;color:#a8978c;padding:22px 0;text-align:center;font-size:.8rem}
 
-  footer{background:#1a0d08;color:#a8978c;padding:24px 0;text-align:center;font-size:.8rem}
-  footer a{color:#c7b4a8;text-decoration:underline}
-
-  .fade-in{opacity:0;transform:translateY(18px);transition:opacity .6s,transform .6s}
+  .fade-in{opacity:0;transform:translateY(16px);transition:opacity .6s,transform .6s}
   .fade-in.visible{opacity:1;transform:translateY(0)}
 
   @media (max-width:768px){
     body{font-size:16px}
     h1{font-size:1.7rem}
     h2{font-size:1.4rem}
-    .s1 h1 .line2{font-size:1rem}
-    section{padding:40px 0}
+    section{padding:28px 0}
     .container{padding:0 18px}
-    .dream-p{padding:18px;font-size:.98rem}
-    .testimonials{grid-template-columns:1fr;gap:12px}
-    .item{grid-template-columns:44px 1fr;grid-template-rows:auto auto;gap:12px}
-    .val{grid-column:1/-1;justify-self:start}
-    .price-big{font-size:3.8rem}
-    .price-big sup{font-size:1.6rem;top:-.9rem}
+    .s1-bar h1{font-size:1.35rem}
+    .s1-pill{font-size:1rem;padding:12px 14px}
+    .welcome,.offer-desc{font-size:1rem}
+    .price-big{font-size:2.8rem}
+    .price-yes{font-size:1.7rem}
     .seal{width:150px;height:150px}
-    .seal-2{font-size:2rem}
+    .seal-2{font-size:1.9rem}
     .cta-micro{flex-direction:column;gap:6px}
     .timer-bar{font-size:.82rem;padding:8px 12px}
-    .fast-timer .clock2{font-size:1.2rem}
   }
   @media (prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}.fade-in{opacity:1;transform:none}}
 </style>
@@ -167,131 +130,97 @@
   <span class="clock" id="clockTop">15:00</span>
 </div>
 
-<!-- S1 Pattern interrupt -->
+<!-- S1: Red bar + yellow pill (Elementor originals) -->
 <section class="s1">
-  <div class="container">
-    <span class="tag">⚡ Una sola pantalla · No volverá a aparecer</span>
-    <h1 class="fade-in">Espera — tu pedido aún no está cerrado.
-      <span class="line2">Antes de entregarte la Gelatina, hay una decisión que cambia todo en los próximos 7 días.</span>
-    </h1>
-    <p class="sub fade-in">Las mujeres que agregan esto AHORA bajan <strong>2 a 4 kilos en la primera semana</strong> — las que no, tardan <strong>3 veces más</strong>.</p>
+  <div class="s1-bar">
+    <h1>¡ESPERA! ¡HA RECIBIDO UN BENEFICIO EXCLUSIVO!</h1>
+  </div>
+  <div class="s1-pill">
+    ⚡ ¡ACELERA TU PROCESO DE ADELGAZAMIENTO EN LA MITAD DEL TIEMPO!
   </div>
 </section>
 
-<!-- S2 Dream + hero image -->
+<!-- S2: Welcome + hero + offer description -->
 <section class="s2">
   <div class="container">
-    <div class="hero-img fade-in"><img src="assets/img/hero-lifestyle.png" alt="Mujer latina preparando té milenario" loading="lazy"></div>
-    <h2 class="fade-in">En 7 días, el jean que guardaste "para cuando adelgace" vuelve a cerrar.</h2>
-    <p class="dream-p fade-in">El viernes por la mañana te paras frente al espejo y, por primera vez en meses, el abdomen ya no sobresale del pantalón. La balanza marca <strong>2 a 4 kilos menos</strong>. Todo eso <strong>sin pasar hambre, sin gimnasio, sin cambiar tu rutina</strong> — solo sumando 5 minutos al día a la Gelatina que acabas de elegir.</p>
-    <div class="bullets">
-      <div class="bullet fade-in"><div class="bullet-ic">1</div><div class="bullet-tx"><strong>Té milenario + psyllium</strong> activan tu GLP-1 natural → saciedad real sin fuerza de voluntad.</div></div>
-      <div class="bullet fade-in"><div class="bullet-ic">2</div><div class="bullet-tx"><strong>Ritual nocturno de 8 min</strong> → despiertas con la panza plana y la cara desinflada.</div></div>
-      <div class="bullet fade-in"><div class="bullet-ic">3</div><div class="bullet-tx"><strong>21 combinaciones latinas</strong> → comes arroz, tortilla, arepa, pan — sin sentir que estás a dieta.</div></div>
-      <div class="bullet fade-in"><div class="bullet-ic">4</div><div class="bullet-tx"><strong>Horarios exactos día por día</strong> → tu cuerpo entra en modo quema antes del día 3.</div></div>
-    </div>
+    <p class="welcome fade-in">
+      <span class="bold">¡Felicidades!</span> Ya estás oficialmente dentro de <em>GelatinaApp</em> y recibiste <span class="u">ACCESO EXCLUSIVO</span> al <span class="bold">Acelerador de Resultados 7D</span>.
+    </p>
+    <div class="hero-img fade-in"><img src="https://assets.zyrosite.com/YKba7wzap1tZ1EPn/giff-emagrecimento-2zS4W0iuHiSdYiwY.gif" alt="GelatinaApp - Acelerador 7D" loading="lazy"></div>
+    <p class="offer-desc fade-in">
+      Un poderoso <span class="it">té milenario exclusivo,</span> fácil de preparar, que potencia la hormona GLP-1 dentro de tu cuerpo, haciendo que tu metabolismo entre en <span class="highlight">modo de quema acelerada de grasa hasta 10x,</span> para lograr <span class="u">adelgazar en la mitad del tiempo</span> de forma natural, sin esfuerzo y sin cambiar nada en tu rutina.
+    </p>
   </div>
 </section>
 
-<!-- S3 Mecanismo -->
-<section class="s3 soft">
+<!-- S3: Checklist (original items) -->
+<section class="s3">
   <div class="container">
-    <h2 class="fade-in">Se llama "Protocolo GLP-1 Natural". Es la razón por la que unas bajan en 7 días lo que a otras les toma 3 meses.</h2>
-    <div class="mech-img fade-in"><img src="assets/img/mecanismo.png" alt="Gelatina con psyllium y té milenario" loading="lazy"></div>
-    <div class="mech-intro fade-in">
-      <p>El <strong>GLP-1</strong> es la hormona que tu intestino usa para avisarle al cerebro <em>"ya comiste suficiente"</em>. Después de años de dietas yo-yo y estrés, esa señal llega débil y tarde — por eso comes y vuelves a tener hambre en media hora.</p>
-      <p>Ozempic <em>imita</em> esa hormona con una inyección. El Protocolo hace algo distinto: <strong>tu cuerpo la produce de nuevo</strong> combinando psyllium (saciedad) + té milenario (activador GLP-1), en horarios exactos. Efecto multiplicado <strong>10×</strong>.</p>
+    <div class="checklist-card fade-in">
+      <div class="checklist-head">Al decir <strong>SÍ</strong>, lo recibes inmediatamente dentro de GelatinaApp:</div>
+      <div class="checklist-items">
+        <div><span class="chk">✅</span> <strong>La receta exacta</strong> del <strong>Té Acelerador de Resultados</strong> de GelatinaApp;</div>
+        <div><span class="chk">✅</span> <strong>El paso a paso de preparación</strong> + <strong>video clase</strong> incluida;</div>
+        <div><span class="chk">✅</span> <strong>Cómo usarlo por 7 días</strong> (horario + combinación ideal).</div>
+      </div>
     </div>
-    <p class="mech-close fade-in">No estás reemplazando la Gelatina. La estás <strong>encendiendo</strong>.</p>
   </div>
 </section>
 
-<!-- S4 Social proof -->
+<!-- S4: Bonus (original) -->
 <section class="s4">
   <div class="container">
-    <h2 class="fade-in">Mujeres reales, 7 días después.</h2>
-    <div class="testimonials">
-      <div class="testim fade-in">
-        <div class="testim-head"><div class="avatar">PG</div><div><div class="testim-name">Paola G.</div><div class="testim-meta">41 · Guadalajara</div></div></div>
-        <div class="testim-body">"Día 4 la balanza marcó 2.3 kg menos. Al día 7 cerré un jean de antes de la pandemia. No pasé hambre ni un día."</div>
-        <div class="testim-stars">★★★★★</div>
-      </div>
-      <div class="testim fade-in">
-        <div class="testim-head"><div class="avatar">JM</div><div><div class="testim-name">Johana M.</div><div class="testim-meta">47 · Medellín</div></div></div>
-        <div class="testim-body">"Hipotiroidismo, 2 años estancada. El protocolo me bajó 3.1 kg en la primera semana. Mi marido notó la cara menos hinchada."</div>
-        <div class="testim-stars">★★★★★</div>
-      </div>
-      <div class="testim fade-in">
-        <div class="testim-head"><div class="avatar">MC</div><div><div class="testim-name">Marcela C.</div><div class="testim-meta">53 · Rosario</div></div></div>
-        <div class="testim-body">"Casi salto este upgrade. Menos mal cambié de idea. Día 6 la panza estaba visiblemente plana. Me sentí de 40, no de 53."</div>
-        <div class="testim-stars">★★★★★</div>
+    <div class="bonus-card fade-in">
+      <div class="bonus-head">🎁 BONO GRATIS: Ritual Nocturno "Desinfla Rápido"</div>
+      <div class="bonus-body">
+        Un ritual simple para hacer por la noche y despertar con el cuerpo más ligero y totalmente desinflamado (con beneficios celulares extra que ayudan en la prevención del lipedema).
+        <br><br>
+        Si buscas reducir la sensación de hinchazón, alivio inmediato del estreñimiento y cólicos cotidianos, este bono será perfecto para ti.
       </div>
     </div>
-    <div class="stat fade-in"><strong>7 de cada 10 mujeres</strong> reportan el abdomen visiblemente menos hinchado en las primeras <strong>72 horas</strong>.</div>
   </div>
 </section>
 
-<!-- S5 Value stack -->
+<!-- S5: Mockup image + price box (original) -->
 <section class="s5">
   <div class="container">
-    <h2 class="fade-in">Todo lo que se suma HOY a tu cuenta:</h2>
-    <div class="mockup fade-in"><img src="assets/img/mockup-acelerador.png" alt="Material del Acelerador de Resultados" loading="lazy"></div>
-    <div class="stack">
-      <div class="item fade-in"><div class="ic">C</div><div><h3>Protocolo GLP-1 Natural — 7 días</h3><p>Plan día por día, horarios, lista LATAM y clase de 12 min.</p></div><div class="val">$97</div></div>
-      <div class="item fade-in"><div class="ic">B1</div><div><h3>21 Combinaciones Latinas sin Dieta</h3><p>Arroz, tortilla, arepa, pan — comidas reales que aceleran el protocolo.</p></div><div class="val">$37</div></div>
-      <div class="item fade-in"><div class="ic">B2</div><div><h3>Ritual Nocturno Desinflamatorio</h3><p>8 minutos antes de dormir. Audio guía incluido.</p></div><div class="val">$27</div></div>
-      <div class="item fade-in"><div class="ic">B3</div><div><h3>Mapa de Recaídas — Día 8, 14 y 30</h3><p>Cómo mantener sin rebote después del protocolo.</p></div><div class="val">$47</div></div>
-      <div class="item fast fade-in"><span class="fast-tag">⚡ SOLO EN 15 MIN</span><div class="ic">B4</div><div><h3>Sesiones WhatsApp en Vivo · 4 semanas</h3><p>Grupo cerrado · 4 encuentros × 30 min · cupo 50 mujeres/semana.</p></div><div class="val">$67</div></div>
+    <div class="mockup-img fade-in"><img src="assets/img/mockup-acelerador.png" alt="Mockup GelatinaApp - Acelerador 7D + Bono" loading="lazy"></div>
+    <div class="price-box fade-in">
+      <div class="price-line">
+        De <span class="price-old">$197,00</span><br>
+        Por solo <span class="price-green">$67,00</span>
+      </div>
+      <div class="price-yes">¡SÍ! SOLO</div>
+      <div class="price-big">$67,00!</div>
+      <div class="price-sub">¡Este es tu momento<br>de transformación!</div>
+      <p class="price-cta-text">
+        Haz clic en el <span class="green">botón verde de abajo</span><br>
+        y añade ahora mismo el <span class="bold">Acelerador de Resultados 7D</span><br>
+        a tu paquete con un <span class="bold">descuento especial</span> sobre el valor original.
+      </p>
     </div>
-    <div class="total fade-in"><span class="strike">Valor total: $275</span>Hoy solo: <strong>$67</strong></div>
   </div>
 </section>
 
-<!-- S6 Preço -->
+<!-- S6: Guarantee 60 days -->
 <section class="s6">
   <div class="container">
-    <div class="price fade-in">
-      <div class="price-old">$197</div>
-      <div class="price-big"><sup>$</sup>67</div>
-      <div class="price-daily">$9.57/día = <strong>menos que un café</strong></div>
-      <div class="price-install">o 3 pagos de <strong>$22</strong> sin interés</div>
-      <p class="price-sub">Menos que una consulta con nutricionista — 10× más rápido.</p>
+    <h2 class="fade-in">Si no bajas al menos 1.5 kg o no ves tu abdomen visiblemente desinflado — te devolvemos los $67 y te quedas con todo.</h2>
+    <div class="fade-in">
+      <div class="seal">
+        <div class="seal-1">Garantía</div>
+        <div class="seal-2">60 días</div>
+        <div class="seal-3">Resultado o reembolso<br>Te quedas con todo</div>
+      </div>
     </div>
+    <p class="guar-text fade-in">Si después de ejecutar el protocolo la balanza no marcó al menos <strong>1.5 kg menos</strong> o no ves el abdomen visiblemente desinflado, nos escribes y te devolvemos los $67 — <strong>te quedas con todo el material</strong>. Tienes <strong>60 días completos</strong> desde la compra para pedirlo. El riesgo es nuestro.</p>
   </div>
 </section>
 
-<!-- S7 Garantia 60 dias -->
+<!-- S7: CTA Hotmart widget + rejection link (original text) -->
 <section class="s7">
   <div class="container">
-    <h2 class="fade-in">Si en 7 días no bajas al menos 1.5 kg — te devolvemos los $67 y te quedas con todo.</h2>
-    <div class="seal fade-in">
-      <div class="seal-1">Garantía</div>
-      <div class="seal-2">60 días</div>
-      <div class="seal-3">Resultado o reembolso<br>Te quedas con todo</div>
-    </div>
-    <div class="guar-text fade-in">
-      <p>Ejecutas el protocolo los 7 días. Si la balanza no marcó al menos <strong>1.5 kg menos</strong> o no ves el abdomen desinflado, nos escribes y te devolvemos los $67 — <strong>te quedas con todo el material</strong>. Tienes <strong>60 días completos</strong> desde la compra para pedirlo. El riesgo es nuestro.</p>
-    </div>
-  </div>
-</section>
-
-<!-- S8 Fast-action -->
-<section class="s8">
-  <div class="container">
-    <h2 class="fade-in">Solo si dices SÍ en los próximos 15 minutos: entras al grupo WhatsApp en vivo.</h2>
-    <div class="fast-box fade-in">
-      <p>4 sesiones de 30 minutos con nuestra nutricionista — 1 por semana durante un mes. Se resuelven dudas en vivo, se ajusta el protocolo caso por caso. <strong>Cupo limitado a 50 mujeres por semana.</strong></p>
-      <p>Vale $67. <strong>Se desbloquea solo si confirmas antes del timer.</strong> Después no hay cómo agregarlo — ni pagando aparte.</p>
-      <div class="fast-timer" id="fastTimerBox">Expira en: <span class="clock2" id="clockFast">15:00</span></div>
-    </div>
-  </div>
-</section>
-
-<!-- S9 CTA Hotmart Widget -->
-<section class="s9">
-  <div class="container">
-    <h2 class="fade-in">Añade el Acelerador a tu pedido</h2>
-    <div class="cta-micro">
+    <div class="cta-micro fade-in">
       <span>✅ Acceso inmediato</span>
       <span>✅ Garantía 60 días</span>
       <span>✅ Se suma a tu pedido</span>
@@ -301,40 +230,27 @@
     <script src="https://checkout.hotmart.com/lib/hotmart-checkout-elements.js"></script>
     <script>checkoutElements.init('salesFunnel').mount('#hotmart-sales-funnel')</script>
     <!-- HOTMART - Sales Funnel Widget -->
-    <a href="https://gelatinadelasfamosas.online/7adr5s5a77/" class="cta-refuse">No gracias, prefiero ir despacio y ver resultados en 3-6 meses →</a>
-  </div>
-</section>
-
-<!-- S10 P.S. -->
-<section class="ps">
-  <div class="container">
-    <p class="fade-in"><strong>P.S.</strong> — El precio de $67 no aparece en ningún otro lugar. Ni mañana, ni la semana que viene. Solo aquí, solo mientras el timer no llegue a cero. <strong>Esta es la versión de ti que ya decidió no esperar más.</strong></p>
+    <a href="https://gelatinadelasfamosas.online/7adr5s5a77/" class="cta-refuse">No, rechazo beneficios exclusivos.</a>
   </div>
 </section>
 
 <footer>
-  <div class="container">© 2026 Gelatina Truco · <a href="#">Términos</a> · <a href="#">Privacidad</a></div>
+  <div class="container">© 2026 Gelatina Truco · <a href="#" style="color:#c7b4a8;text-decoration:underline">Términos</a> · <a href="#" style="color:#c7b4a8;text-decoration:underline">Privacidad</a></div>
 </footer>
 
 <script>
 (function(){
   var totalSeconds = 15 * 60;
   var clockTop = document.getElementById('clockTop');
-  var clockFast = document.getElementById('clockFast');
   var timerBar = document.getElementById('timerBar');
-  var fastTimerBox = document.getElementById('fastTimerBox');
 
   function fmt(s){var m=Math.floor(s/60);var sec=s%60;return (m<10?'0':'')+m+':'+(sec<10?'0':'')+sec}
   function tick(){
     if (totalSeconds <= 0){
-      clockTop.textContent='00:00';clockFast.textContent='00:00';
-      if (fastTimerBox) fastTimerBox.innerHTML='<strong>⚠️ Bônus expirado</strong> — sesiones en vivo ya no disponibles.';
-      var fc=document.querySelector('.item.fast');if(fc){fc.style.opacity='.45';fc.style.filter='grayscale(1)'}
-      var ft=document.querySelector('.fast-tag');if(ft){ft.textContent='⚠️ Expirado';ft.style.background='#999'}
+      clockTop.textContent='00:00';
       clearInterval(interval);return;
     }
     clockTop.textContent=fmt(totalSeconds);
-    clockFast.textContent=fmt(totalSeconds);
     if (totalSeconds<=60) timerBar.classList.add('urgent');
     totalSeconds--;
   }
