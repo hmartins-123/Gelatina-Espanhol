@@ -66,17 +66,19 @@
   .mech-close{text-align:center;font-size:1.2rem;margin-top:24px;max-width:640px;margin-left:auto;margin-right:auto;font-weight:500}
   .mech-close strong{color:var(--rose-dark);font-weight:800}
 
-  /* S4 proof */
-  .s4 h2{text-align:center;margin-bottom:32px;max-width:760px;margin-left:auto;margin-right:auto}
-  .testimonials{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;max-width:920px;margin:0 auto 28px}
-  .testim{background:#fff;border-radius:14px;padding:22px;border:1px solid var(--border);box-shadow:0 4px 14px rgba(45,24,16,.06)}
-  .testim-head{display:flex;align-items:center;gap:12px;margin-bottom:12px}
-  .avatar{width:44px;height:44px;border-radius:50%;background:var(--cream);color:var(--rose-dark);font-weight:800;font-size:.95rem;display:flex;align-items:center;justify-content:center;border:2px solid var(--rose);font-family:'Playfair Display',serif}
-  .testim-name{font-weight:700;font-size:.95rem}
-  .testim-meta{font-size:.8rem;color:var(--muted)}
-  .testim-body{font-style:italic;font-size:.92rem;line-height:1.55}
-  .testim-stars{color:var(--peach);font-size:.9rem;margin-top:8px;letter-spacing:2px}
-  .stat{max-width:760px;margin:0 auto;text-align:center;padding:18px 24px;background:#fff;border:2px dashed var(--rose);border-radius:12px;font-size:1rem;font-weight:500}
+  /* S4 proof — video carousel */
+  .s4 h2{text-align:center;margin-bottom:22px;max-width:760px;margin-left:auto;margin-right:auto}
+  .carousel{display:flex;overflow-x:auto;scroll-snap-type:x mandatory;gap:14px;scroll-behavior:smooth;padding:4px 20px 16px;margin:0 -24px;-webkit-overflow-scrolling:touch;scrollbar-width:thin}
+  .carousel::-webkit-scrollbar{height:6px}
+  .carousel::-webkit-scrollbar-track{background:transparent}
+  .carousel::-webkit-scrollbar-thumb{background:var(--rose);border-radius:6px}
+  .carousel-slide{flex:0 0 85%;max-width:360px;scroll-snap-align:center}
+  .carousel-slide vturb-smartplayer{width:100%;display:block;border-radius:14px;overflow:hidden;box-shadow:0 4px 14px rgba(45,24,16,.1)}
+  .carousel-dots{display:flex;justify-content:center;gap:8px;margin-top:12px}
+  .dot{width:10px;height:10px;border-radius:50%;background:var(--border);border:0;cursor:pointer;transition:background .2s,transform .2s;padding:0}
+  .dot.active{background:var(--rose);transform:scale(1.3)}
+  @media (min-width:768px){.carousel-slide{flex:0 0 320px}}
+  .stat{max-width:760px;margin:28px auto 0;text-align:center;padding:18px 24px;background:#fff;border:2px dashed var(--rose);border-radius:12px;font-size:1rem;font-weight:500}
   .stat strong{color:var(--rose-dark);font-weight:800}
 
   /* S5 stack */
@@ -143,7 +145,6 @@
     .ps{padding:28px 0}
     .container{padding:0 18px}
     .dream-p{padding:18px;font-size:.98rem}
-    .testimonials{grid-template-columns:1fr;gap:12px}
     .item{grid-template-columns:44px 1fr;gap:12px}
     .price-big{font-size:2.8rem}
     .price-yes{font-size:1.6rem}
@@ -201,30 +202,38 @@
   </div>
 </section>
 
-<!-- S4 Social proof -->
+<!-- S4 Social proof — 4-video carousel -->
 <section class="s4">
   <div class="container">
     <h2 class="fade-in">Mujeres reales. Siete días después.</h2>
-    <div class="testimonials">
-      <div class="testim fade-in">
-        <div class="testim-head"><div class="avatar">PG</div><div><div class="testim-name">Paola G.</div><div class="testim-meta">41 · Guadalajara</div></div></div>
-        <div class="testim-body">"Día 4 la balanza marcó 2,3 kg menos. Al día 7 cerré un jean que tenía guardado desde antes del embarazo. No pasé hambre ni un solo día."</div>
-        <div class="testim-stars" aria-label="5 de 5 estrellas">★★★★★</div>
-      </div>
-      <div class="testim fade-in">
-        <div class="testim-head"><div class="avatar">JM</div><div><div class="testim-name">Johana M.</div><div class="testim-meta">47 · Medellín</div></div></div>
-        <div class="testim-body">"Tengo hipotiroidismo, llevaba 2 años estancada. En la primera semana bajé 3,1 kg. Mi esposo fue el primero en notar la cara menos hinchada."</div>
-        <div class="testim-stars" aria-label="5 de 5 estrellas">★★★★★</div>
-      </div>
-      <div class="testim fade-in">
-        <div class="testim-head"><div class="avatar">MC</div><div><div class="testim-name">Marcela C.</div><div class="testim-meta">53 · Rosario</div></div></div>
-        <div class="testim-body">"Casi rechazo esta oferta. Menos mal cambié de idea. Día 6 la panza estaba visiblemente plana. Me miré al espejo y me sentí de 40, no de 53."</div>
-        <div class="testim-stars" aria-label="5 de 5 estrellas">★★★★★</div>
-      </div>
+    <div class="carousel" id="videoCarousel">
+      <div class="carousel-slide"><vturb-smartplayer id="vid-69e6ed97af7645fdd1de578d" style="display:block;margin:0 auto;width:100%;max-width:400px;"></vturb-smartplayer></div>
+      <div class="carousel-slide"><vturb-smartplayer id="vid-69e6ed8b05c3ed4453d83659" style="display:block;margin:0 auto;width:100%;max-width:400px;"></vturb-smartplayer></div>
+      <div class="carousel-slide"><vturb-smartplayer id="vid-69e6ed852f0447a849a6a5af" style="display:block;margin:0 auto;width:100%;max-width:400px;"></vturb-smartplayer></div>
+      <div class="carousel-slide"><vturb-smartplayer id="vid-69e6ed79d9a2e678cbca60df" style="display:block;margin:0 auto;width:100%;max-width:400px;"></vturb-smartplayer></div>
+    </div>
+    <div class="carousel-dots" id="videoCarouselDots" role="tablist" aria-label="Navegación de videos">
+      <button class="dot active" data-i="0" aria-label="Video 1"></button>
+      <button class="dot" data-i="1" aria-label="Video 2"></button>
+      <button class="dot" data-i="2" aria-label="Video 3"></button>
+      <button class="dot" data-i="3" aria-label="Video 4"></button>
     </div>
     <div class="stat fade-in"><strong>7 de cada 10 mujeres</strong> reportan el abdomen visiblemente menos hinchado en las primeras <strong>72 horas</strong> del protocolo.</div>
   </div>
 </section>
+
+<!-- vturb loaders for carousel (4 players) -->
+<script type="text/javascript">
+(function(){
+  var players=['69e6ed97af7645fdd1de578d','69e6ed8b05c3ed4453d83659','69e6ed852f0447a849a6a5af','69e6ed79d9a2e678cbca60df'];
+  players.forEach(function(id){
+    var s=document.createElement('script');
+    s.src='https://scripts.converteai.net/1931009e-87e8-44a9-862f-c0f557162b5e/players/'+id+'/v4/player.js';
+    s.async=true;
+    document.head.appendChild(s);
+  });
+})();
+</script>
 
 <!-- S5 Value stack -->
 <section class="s5">
@@ -319,6 +328,30 @@
     document.querySelectorAll('.fade-in').forEach(function(el){io.observe(el)});
   } else {
     document.querySelectorAll('.fade-in').forEach(function(el){el.classList.add('visible')});
+  }
+
+  // Video carousel — dots sync + click-to-scroll
+  var carousel=document.getElementById('videoCarousel');
+  if(carousel){
+    var dots=document.querySelectorAll('#videoCarouselDots .dot');
+    var slides=carousel.querySelectorAll('.carousel-slide');
+    function updateDots(){
+      var center=carousel.scrollLeft+carousel.clientWidth/2;
+      var active=0, min=Infinity;
+      slides.forEach(function(s,i){
+        var sc=s.offsetLeft+s.offsetWidth/2;
+        var d=Math.abs(sc-center);
+        if(d<min){min=d;active=i;}
+      });
+      dots.forEach(function(d,i){d.classList.toggle('active',i===active);});
+    }
+    carousel.addEventListener('scroll',updateDots,{passive:true});
+    dots.forEach(function(d){
+      d.addEventListener('click',function(){
+        var i=parseInt(d.dataset.i,10);
+        slides[i].scrollIntoView({behavior:'smooth',block:'nearest',inline:'center'});
+      });
+    });
   }
 })();
 </script>
